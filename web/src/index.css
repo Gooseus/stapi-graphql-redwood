@@ -1,0 +1,70 @@
+/**
+ * START --- SETUP TAILWINDCSS EDIT
+ *
+ * `yarn rw setup ui tailwindcss` placed these directives here
+ * to inject Tailwind's styles into your CSS.
+ * For more information, see: https://tailwindcss.com/docs/installation
+ */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/**
+ * END --- SETUP TAILWINDCSS EDIT
+ */
+
+h1 {
+  @apply text-3xl font-bold underline
+}
+
+h2 {
+  @apply text-xl font-bold mt-5
+}
+
+h3 {
+  @apply text-2xl font-bold mb-2
+}
+
+h4 {
+  @apply text-xl mb-1 italic
+}
+
+h5 {
+  @apply text-lg mb-1
+}
+
+nav {
+  @apply my-3
+}
+
+header > nav {
+  @apply flex flex-row space-x-4
+}
+
+header > nav a.active {
+  @apply text-violet-600
+}
+
+p {
+  @apply my-4;
+}
+
+a {
+  @apply text-blue-500 hover:text-blue-900
+}
+
+input[type="text"] {
+  @apply border-2 border-gray-600 mr-2 active:border-blue-500
+}
+
+button[type="submit"] {
+  @apply border-2 rounded font-bold border-blue-500 px-1 hover:bg-blue-700 hover:text-white
+}
+
+ul.episode-list > li {
+  @apply m-2 p-2 border-solid border-2 rounded border-blue-400 float-left
+  hover:bg-blue-600 hover:text-white transition-colors duration-300 cursor-pointer
+}
+
+ul.episode-list > li p {
+  @apply m-0
+}

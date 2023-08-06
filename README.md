@@ -1,5 +1,9 @@
 # README
 
+> This RedwoodJS test project doesn't use any DB, but instead proxies all requests to a the remote [STAPI](https://stapi.co).  It was created running the [openapi-to-graphql](https://github.com/ibm/openapi-to-graphql) CLI tool on the [STAPI OpenAPI specification](https://stapi.co/api/v1/rest/common/download/stapi.yaml), and modifying the resulting graphql schema into a proper SDL that Redwood could read, adjusting the Search interfaces, and creating some composite types.
+>
+> The FE is still a WIP, using TailwindCSS for the UI and only having a couple test pages.
+
 Welcome to [RedwoodJS](https://redwoodjs.com)!
 
 > **Prerequisites**
